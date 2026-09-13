@@ -1,0 +1,21 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "thethomasbachmann-com",
+  "main": "src/index.js",
+  "compatibility_date": "2026-09-01",
+
+  // Statische Dateien aus ./public werden direkt ausgeliefert.
+  // Alles, was dort nicht existiert (z. B. /linktree), landet im Worker.
+  "assets": {
+    "directory": "./public",
+    "binding": "ASSETS"
+  },
+
+  "observability": { "enabled": true }
+
+  // Eigene Domain aktivieren, sobald die Zone im Cloudflare-Account liegt:
+  // , "routes": [
+  //   { "pattern": "thethomasbachmann.com", "custom_domain": true },
+  //   { "pattern": "www.thethomasbachmann.com", "custom_domain": true }
+  // ]
+}

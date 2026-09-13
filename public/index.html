@@ -3,26 +3,203 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Thomas Bachmann</title>
-<style>
-  :root { --bg: #f4f2ee; --text: #1b1a18; --muted: #6d6a64; --accent: #c2410c; }
-  @media (prefers-color-scheme: dark) { :root { --bg: #121110; --text: #f1eee9; --muted: #a29d95; --accent: #fb923c; } }
-  body {
-    margin: 0; min-height: 100vh; display: grid; place-items: center; text-align: center;
-    background: var(--bg); color: var(--text);
-    font: 16px/1.5 ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
-  }
-  h1 { font-size: clamp(32px, 6vw, 56px); margin: 0 0 8px; letter-spacing: -.02em; }
-  p { color: var(--muted); margin: 0 0 24px; }
-  a { color: var(--accent); font-weight: 600; text-decoration: none; }
-  a:hover { text-decoration: underline; }
-</style>
+<title>Thomas Bachmann – Tanztrainer & Gründer des Hep Cat Club</title>
+<meta name="description" content="Thomas Bachmann: Gründer des Hep Cat Club in Augsburg und München, Trainer für West Coast Swing und Lindy Hop – weltweit unterwegs.">
+<meta property="og:title" content="Thomas Bachmann">
+<meta property="og:description" content="Tanztrainer weltweit · Gründer des Hep Cat Club in München & Augsburg">
+<meta property="og:image" content="/img/thomas-stage.jpg">
+<meta name="theme-color" content="#000000">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%23000'/><text x='50' y='72' font-size='60' font-family='Arial Black,sans-serif' font-weight='900' text-anchor='middle' fill='%23dbff00'>TB</text></svg>">
+<link rel="preload" href="/fonts/anton.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/style.css">
 </head>
 <body>
+
+<header class="nav">
+  <a class="logo" href="/">Thomas Bachmann</a>
+  <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu" aria-label="Menü öffnen">
+    <span></span><span></span><span></span>
+  </button>
+  <nav id="menu" class="menu" aria-label="Hauptnavigation">
+    <a href="#geschichte">Meine Geschichte</a>
+    <a href="#unterricht">Unterricht</a>
+    <a href="#workshops">Workshops weltweit</a>
+    <a href="https://hepcatclub.com" target="_blank" rel="noopener">Hep Cat Club</a>
+    <a href="/linktree">Links</a>
+    <a class="menu-cta" href="#anfragen">Anfragen</a>
+  </nav>
+</header>
+
 <main>
-  <h1>Thomas Bachmann</h1>
-  <p>Hier entsteht meine Website.</p>
-  <a href="/linktree">Alle Links →</a>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-text">
+      <p class="eyebrow">Tanztrainer · Gründer · Swing seit 2012</p>
+      <h1 class="hero-name"><span>Thomas</span><span>Bachmann</span></h1>
+      <p class="hero-intro">
+        Gründer des <strong>Hep Cat Club</strong> in Augsburg und München –
+        und als Trainer für West Coast Swing und Lindy Hop weltweit unterwegs.
+      </p>
+      <a class="btn" href="#geschichte">Über mich <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    </div>
+    <figure class="hero-photo">
+      <img src="/img/thomas-stage.jpg" alt="Thomas Bachmann spricht mit Mikrofon vor Publikum" width="1086" height="724" fetchpriority="high">
+      <div class="bars" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+    </figure>
+  </section>
+
+  <!-- TICKER -->
+  <div class="ticker" aria-hidden="true">
+    <div class="ticker-track">
+      <span>West Coast Swing</span><span>Lindy Hop</span><span>Augsburg</span><span>München</span><span>Weltweit</span>
+      <span>West Coast Swing</span><span>Lindy Hop</span><span>Augsburg</span><span>München</span><span>Weltweit</span>
+    </div>
+  </div>
+
+  <!-- CARDS -->
+  <section class="cards" aria-label="Was ich mache">
+    <a class="card" href="https://hepcatclub.com" target="_blank" rel="noopener">
+      <img src="/img/hcc-community.jpg" alt="" loading="lazy">
+      <span class="card-arrow"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+      <span class="card-title">Hep Cat<br>Club</span>
+    </a>
+    <a class="card" href="#unterricht">
+      <img src="/img/west-coast-swing.jpg" alt="" loading="lazy">
+      <span class="card-arrow"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+      <span class="card-title">West Coast<br>Swing</span>
+    </a>
+    <a class="card" href="#unterricht">
+      <img src="/img/lindy-hop.jpg" alt="" loading="lazy">
+      <span class="card-arrow"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+      <span class="card-title">Lindy<br>Hop</span>
+    </a>
+    <a class="card" href="#workshops">
+      <img src="/img/festival.jpg" alt="" loading="lazy">
+      <span class="card-arrow"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+      <span class="card-title">Workshops<br>weltweit</span>
+    </a>
+  </section>
+
+  <!-- TIMELINE -->
+  <section id="geschichte" class="story">
+    <header class="section-head" data-reveal>
+      <p class="eyebrow">Meine Geschichte</p>
+      <h2>Vom Schnupperkurs<br>zur eigenen Tanzschule</h2>
+    </header>
+
+    <ol class="timeline">
+      <li class="t-item" data-reveal>
+        <div class="t-media"><img src="/img/schnupperkurs.jpg" alt="Paar beim Swing-Tanzen im Club" loading="lazy"></div>
+        <div class="t-label">2012</div>
+        <div class="t-body">
+          <h3>Ein Schnupperkurs</h3>
+          <p class="t-place">Augsburg</p>
+          <p>Angefangen hat alles mit einem Schnupperkurs – aus dem es nie wieder einen Ausstieg gab.</p>
+        </div>
+      </li>
+      <li class="t-item" data-reveal>
+        <div class="t-media"><img src="/img/gruendung.jpg" alt="Tänzerin wirbelt über die Tanzfläche" loading="lazy"></div>
+        <div class="t-label">2012</div>
+        <div class="t-body">
+          <h3>Gründung des Hep Cat Club</h3>
+          <p class="t-place">Augsburg</p>
+          <p>Aus der Begeisterung wird eine eigene Tanzschule – mit dem Ziel, die Freude am Swing-Tanzen weiterzugeben.</p>
+        </div>
+      </li>
+      <li class="t-item" data-reveal>
+        <div class="t-media"><img src="/img/studio.jpg" alt="Tanzpaar im Studio" loading="lazy"></div>
+        <div class="t-label">Gleis 1</div>
+        <div class="t-body">
+          <h3>Ein Zuhause für die Community</h3>
+          <p class="t-place">Augsburg Hauptbahnhof</p>
+          <p>Drei helle Säle auf 580&nbsp;m², Bar und Lounge – mit über 30 Kursen pro Woche und regelmäßigen Social Dances.</p>
+        </div>
+      </li>
+      <li class="t-item" data-reveal>
+        <div class="t-media"><img src="/img/muenchen.jpg" alt="Tanzpaar lacht beim West Coast Swing" loading="lazy"></div>
+        <div class="t-label">München</div>
+        <div class="t-body">
+          <h3>Der Club wächst</h3>
+          <p class="t-place">München</p>
+          <p>Mit dem zweiten Standort in München kommt der Hep Cat Club in die Landeshauptstadt.</p>
+        </div>
+      </li>
+      <li class="t-item" data-reveal>
+        <div class="t-media"><img src="/img/thomas-stage.jpg" alt="Thomas Bachmann auf einem Event" loading="lazy"></div>
+        <div class="t-label">Heute</div>
+        <div class="t-body">
+          <h3>Weltweit unterwegs</h3>
+          <p class="t-place">Workshops &amp; Festivals</p>
+          <p>Als Trainer für West Coast Swing und Lindy Hop unterrichte ich auf Workshops und Events rund um die Welt.</p>
+        </div>
+      </li>
+    </ol>
+  </section>
+
+  <!-- TEACHING -->
+  <section id="unterricht" class="teach">
+    <figure class="teach-photo" data-reveal>
+      <img src="/img/portrait.jpg" alt="Porträt von Thomas Bachmann" loading="lazy" width="600" height="900">
+    </figure>
+    <div class="teach-text" data-reveal>
+      <p class="eyebrow">Wie ich unterrichte</p>
+      <h2>Verstehen<br>statt nachtanzen.</h2>
+      <p class="lead">
+        Mir ist wichtig, dass ihr versteht, was ihr tut. Technik ist kein Selbstzweck,
+        sondern das Werkzeug, mit dem ihr auf jeder Tanzfläche mit jedem Menschen tanzen könnt.
+      </p>
+      <ul class="pillars">
+        <li><span>01</span><div><h3>Kleine Gruppen</h3><p>Damit ich auf jede und jeden eingehen kann.</p></div></li>
+        <li><span>02</span><div><h3>Grundlagen vor Figuren</h3><p>Ein solides Fundament trägt jede Figur.</p></div></li>
+        <li><span>03</span><div><h3>Musikalität</h3><p>Tanzen heißt, Musik sichtbar zu machen.</p></div></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- WORKSHOPS -->
+  <section id="workshops" class="workshops">
+    <div class="ws-images" data-reveal>
+      <img src="/img/festival.jpg" alt="Publikum bei einem Swing-Event" loading="lazy">
+      <img src="/img/lindy-hop.jpg" alt="Lindy Hop am Bahnsteig" loading="lazy">
+    </div>
+    <div class="ws-text" data-reveal>
+      <p class="eyebrow">Workshops weltweit</p>
+      <h2>Du planst ein Event?</h2>
+      <p class="lead">
+        Ob Festival, Wochenend-Workshop oder Intensivkurs: Als Trainer für West Coast Swing und Lindy Hop
+        komme ich gerne zu euch – egal wo auf der Welt.
+      </p>
+      <a class="link-arrow" href="#anfragen">Workshop anfragen <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section id="anfragen" class="cta" data-reveal>
+    <h2>Lass uns<br><em>tanzen.</em></h2>
+    <div class="cta-actions">
+      <a class="btn" href="mailto:thomas@hepcatclub.com?subject=Anfrage%20%C3%BCber%20thethomasbachmann.com">Anfrage senden <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      <a class="btn btn--ghost" href="https://hepcatclub.com" target="_blank" rel="noopener">Kurse im Hep Cat Club</a>
+    </div>
+  </section>
+
 </main>
+
+<footer class="footer">
+  <a class="logo" href="/">Thomas Bachmann</a>
+  <ul class="socials">
+    <li><a href="https://www.instagram.com/thethomasbachmann/" target="_blank" rel="noopener" aria-label="Instagram">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".8"/></svg></a></li>
+    <li><a href="https://www.linkedin.com/in/thethomasbachmann/" target="_blank" rel="noopener" aria-label="LinkedIn">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 10v7M8 7v.01M12 17v-4a2 2 0 0 1 4 0v4M12 10v7"/></svg></a></li>
+  </ul>
+  <p class="legal">
+    © <span data-year>2026</span> Thomas Bachmann ·
+    <a href="/impressum">Impressum</a> ·
+    <a href="/datenschutz">Datenschutz</a>
+  </p>
+</footer>
+
+<script src="/main.js" defer></script>
 </body>
 </html>

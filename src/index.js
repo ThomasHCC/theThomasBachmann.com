@@ -98,11 +98,7 @@ function renderLinktree() {
     display: grid; place-items: center; background: var(--accent-soft); color: var(--accent);
     font-size: 40px; font-weight: 650; letter-spacing: .02em;
   }
-  /* Querformat-Foto: vergrößert und auf das Gesicht zugeschnitten */
-  .avatar img {
-    position: absolute; width: 300%; height: auto; max-width: none;
-    left: -86%; top: -12%;
-  }
+  .avatar img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
   h1 { font-size: 26px; margin: 0 0 6px; letter-spacing: -.01em; }
   .tagline { color: var(--muted); margin: 0 0 32px; }
   ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 12px; }

@@ -8,7 +8,9 @@
   // Alles, was dort nicht existiert (z. B. /linktree), landet im Worker.
   "assets": {
     "directory": "./public",
-    "binding": "ASSETS"
+    "binding": "ASSETS",
+    // Worker läuft vor den statischen Dateien – nötig für die www → ohne-www-Weiterleitung.
+    "run_worker_first": true
   },
 
   "observability": { "enabled": true },

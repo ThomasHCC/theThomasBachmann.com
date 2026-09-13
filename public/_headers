@@ -1,0 +1,4 @@
+# Versteckte Vorschau der Website: nicht indexieren, nicht cachen
+/vorschau-k7q3m9x2/*
+  X-Robots-Tag: noindex, nofollow, noarchive
+  Cache-Control: no-store

@@ -2,7 +2,7 @@
 
 export const profile = {
   name: "Thomas Bachmann",
-  tagline: "Hep Cat Club · Augsburg",
+  tagline: "Tanztrainer weltweit · Hep Cat Club München & Augsburg",
   // Pfad zu einem Bild in ./public. Leer = Initialen.
   avatar: "/avatar.jpg",
 };

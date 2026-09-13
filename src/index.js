@@ -4,6 +4,12 @@ export default {
   async fetch(request, env) {
     const url = new URL(request.url);
 
+    // Nur eine Adresse: www → ohne www
+    if (url.hostname.startsWith("www.")) {
+      url.hostname = url.hostname.slice(4);
+      return Response.redirect(url.toString(), 301);
+    }
+
     if (url.pathname === "/linktree/") {
       return Response.redirect(`${url.origin}/linktree`, 301);
     }

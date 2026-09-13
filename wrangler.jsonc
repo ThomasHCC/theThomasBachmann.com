@@ -11,11 +11,12 @@
     "binding": "ASSETS"
   },
 
-  "observability": { "enabled": true }
+  "observability": { "enabled": true },
 
-  // Eigene Domain aktivieren, sobald die Zone im Cloudflare-Account liegt:
-  // , "routes": [
-  //   { "pattern": "thethomasbachmann.com", "custom_domain": true },
-  //   { "pattern": "www.thethomasbachmann.com", "custom_domain": true }
-  // ]
+  // Worker-Routen auf der Cloudflare-Zone. Die bestehenden (proxied) DNS-Einträge
+  // bleiben unverändert – MX/SPF für die E-Mail bei webgo sind davon nicht betroffen.
+  "routes": [
+    { "pattern": "thethomasbachmann.com/*", "zone_name": "thethomasbachmann.com" },
+    { "pattern": "www.thethomasbachmann.com/*", "zone_name": "thethomasbachmann.com" }
+  ]
 }

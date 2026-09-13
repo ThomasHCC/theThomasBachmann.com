@@ -211,6 +211,7 @@ svg.i { width: 1em; height: 1em; fill: none; stroke: currentColor; stroke-width:
 .t-place { margin: 10px 0 14px; color: var(--accent); font-size: 13px; font-weight: 650; letter-spacing: .12em; text-transform: uppercase; }
 .t-body p:last-child { margin: 0; color: var(--muted); max-width: 40ch; }
 .t-item:nth-child(even) .t-media { order: 3; }
+.t-item:nth-child(even) .t-label { order: 2; }
 .t-item:nth-child(even) .t-body { order: 1; text-align: right; }
 .t-item:nth-child(even) .t-body p:last-child { margin-left: auto; }
 .t-item--text .t-media { visibility: hidden; }
@@ -351,7 +352,7 @@ svg.i { width: 1em; height: 1em; fill: none; stroke: currentColor; stroke-width:
   .timeline::before { left: 0; }
   .t-item, .t-item:nth-child(even) { grid-template-columns: 1fr; gap: 18px; padding-left: 24px; }
   .t-item .t-media, .t-item:nth-child(even) .t-media { order: 2; }
-  .t-item .t-label { order: 1; justify-self: start; background: none; padding: 0; }
+  .t-item .t-label, .t-item:nth-child(even) .t-label { order: 1; justify-self: start; background: none; padding: 0; }
   .t-item .t-body, .t-item:nth-child(even) .t-body { order: 3; text-align: left; }
   .t-item:nth-child(even) .t-body p:last-child { margin-left: 0; }
   .t-item--text .t-media { display: none; }

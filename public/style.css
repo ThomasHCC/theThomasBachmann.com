@@ -226,7 +226,7 @@ svg.i { width: 1em; height: 1em; fill: none; stroke: currentColor; stroke-width:
 .proof-card::after { content: ""; position: absolute; inset: 0; z-index: -1; background: linear-gradient(#0c0c0b10 20%, #0c0c0bf0 88%); }
 .stats {
   list-style: none; margin: 0; padding: clamp(24px, 4vw, 48px);
-  display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px;
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px;
 }
 .stats li { border-top: 2px solid var(--accent); padding-top: 14px; }
 .stats strong { display: block; font-family: var(--display); font-weight: 400; text-transform: uppercase; font-size: clamp(36px, 4.6vw, 68px); line-height: 1; }
@@ -290,6 +290,7 @@ svg.i { width: 1em; height: 1em; fill: none; stroke: currentColor; stroke-width:
   .tile { min-height: 0; }
   .tile h3 { margin-top: 8px; }
   .stats { grid-template-columns: repeat(2, 1fr); }
+  .stats li:last-child:nth-child(odd) { grid-column: 1 / -1; }
 }
 
 @media (max-width: 900px) {

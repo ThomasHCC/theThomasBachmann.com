@@ -71,6 +71,20 @@ svg.i { width: 1em; height: 1em; fill: none; stroke: currentColor; stroke-width:
   font-size: 26px; text-decoration: none; white-space: nowrap;
 }
 .logo span { color: var(--accent); }
+.nav-right { display: flex; align-items: center; gap: 14px; }
+
+/* Sprachumschalter DE | EN */
+.lang { display: flex; padding: 3px; border: 1px solid #f5efe633; border-radius: 999px; }
+.lang a {
+  min-width: 40px; padding: 6px 10px; border-radius: 999px; text-align: center;
+  font-size: 13px; font-weight: 700; letter-spacing: .08em; text-decoration: none; color: var(--muted);
+  transition: color .2s, background .2s;
+}
+.lang a:hover { color: var(--fg); }
+.lang a[aria-current="page"] { background: var(--fg); color: var(--accent-ink); }
+@media (max-width: 480px) {
+  .nav .btn--small { display: none; }
+}
 
 /* ---------- Buttons ---------- */
 .btn {

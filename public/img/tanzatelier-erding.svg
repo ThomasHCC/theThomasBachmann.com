@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 900" preserveAspectRatio="xMidYMid slice">
+  <!-- Platzhalter-Grafik für das Tanzatelier Erding – später durch ein echtes Foto ersetzen -->
+  <defs>
+    <radialGradient id="glowA" cx="78%" cy="18%" r="62%">
+      <stop offset="0" stop-color="#ff5b2e" stop-opacity=".6"/>
+      <stop offset="1" stop-color="#ff5b2e" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowB" cx="12%" cy="88%" r="55%">
+      <stop offset="0" stop-color="#f5a623" stop-opacity=".32"/>
+      <stop offset="1" stop-color="#f5a623" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="floor" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#ff5b2e" stop-opacity=".55"/>
+      <stop offset="1" stop-color="#ff5b2e" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="lines" width="30" height="30" patternUnits="userSpaceOnUse" patternTransform="rotate(-24)">
+      <line x1="0" y1="0" x2="0" y2="30" stroke="#f5efe6" stroke-opacity=".05" stroke-width="2"/>
+    </pattern>
+  </defs>
+  <rect width="1400" height="900" fill="#151412"/>
+  <rect width="1400" height="900" fill="url(#lines)"/>
+  <rect width="1400" height="900" fill="url(#glowA)"/>
+  <rect width="1400" height="900" fill="url(#glowB)"/>
+  <ellipse cx="780" cy="770" rx="560" ry="120" fill="url(#floor)"/>
+  <g fill="none" stroke="#ff5b2e" stroke-width="3">
+    <circle cx="290" cy="250" r="118" stroke-opacity=".7"/>
+    <circle cx="290" cy="250" r="172" stroke-opacity=".3"/>
+    <circle cx="290" cy="250" r="226" stroke-opacity=".12"/>
+  </g>
+  <text x="1340" y="600" text-anchor="end" font-family="Anton, Impact, 'Arial Narrow Bold', sans-serif" font-size="540" letter-spacing="8"
+        fill="none" stroke="#f5efe6" stroke-opacity=".2" stroke-width="3">TE</text>
+</svg>

@@ -10,11 +10,6 @@ export default {
       return Response.redirect(url.toString(), 301);
     }
 
-    // Ehemalige versteckte Vorschau ist jetzt die Startseite
-    if (url.pathname.startsWith("/vorschau-k7q3m9x2")) {
-      return Response.redirect(`${url.origin}/`, 301);
-    }
-
     if (url.pathname === "/linktree/") {
       return Response.redirect(`${url.origin}/linktree`, 301);
     }

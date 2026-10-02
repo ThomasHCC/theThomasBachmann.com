@@ -6,19 +6,42 @@ Website hochgeladen (`wrangler deploy` lädt nur `public/`).
 
 ## Farben
 
-| Name      | Hex       | Verwendung                      |
-|-----------|-----------|---------------------------------|
-| Samtgrün  | `#003025` | Hauptfarbe, Flächen             |
-| Offwhite  | `#f5f4f0` | Logo und Schrift auf Samtgrün   |
+### Hauptfarben
 
-Laut Brandbook: monochrome, zurückgenommene Gestaltung mit Grünabstufungen.
-Bunte Auszeichnungsfarben nur einzeln mit den Hauptfarben kombinieren.
-Die genauen Werte der Abstufungen stehen noch aus.
+| Name     | Hex       | RGB           |
+|----------|-----------|---------------|
+| Samtgrün | `#003025` | 0, 48, 37     |
+| Off-White| `#f5f4f0` | 245, 245, 240 |
+
+### Hauptkategorie (Tanzschule allgemein)
+
+| Name        | Hex       | RGB            |
+|-------------|-----------|----------------|
+| Dunkelgrün  | `#00241e` | 0, 36, 30      |
+| Samtgrün    | `#003025` | 0, 48, 37      |
+| Mittelgrün  | `#1e4f41` | 30, 79, 65     |
+| Grasgrün    | `#55896e` | 85, 137, 110   |
+| Salbeigrün  | `#7db496` | 125, 180, 150  |
+| Off-White   | `#f5f4f0` | 245, 245, 240  |
+
+### Unterkategorien (Auszeichnungsfarben)
+
+| Name   | Hex       | RGB            |
+|--------|-----------|----------------|
+| Gelb   | `#f4de89` | 242, 222, 137  |
+| Orange | `#f56f46` | 245, 111, 70   |
+| Lilac  | `#e4b1ff` | 228, 177, 255  |
+
+Regeln aus dem Brandbook:
+- Minimalistisch und monochrom; die Grünabstufungen dürfen mit den Hauptfarben kombiniert werden.
+- Von den Auszeichnungsfarben darf **immer nur eine** gleichzeitig mit den Hauptfarben auftreten.
+- Monogramm und Wortmarke als Kombination **nur linksbündig** verwenden.
+- Die Wortmarke wird als Rahmen gedacht, durch den man blickt (TANZ oben, ATELIER unten).
 
 ## Schriften
 
-- **New Atlas** – Wortmarke und Überschriften
-- **Montserrat** – Fließtext (Bold für Auszeichnungen)
+- **New Atlas** (medium & semibold) – Wortmarke und Hervorhebungen
+- **Montserrat** (Google Font) – Fließtext, Bold für Auszeichnungen
 
 ## Dateien
 
